@@ -1,0 +1,43 @@
+.navbar ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	background-color: #111;
+}
+
+.navbar li {
+	float: left;
+}
+
+.navbar a {
+	display: block;
+	color: white;
+	text-align: center;
+	text-decoration: none;
+	padding: 14px 16px;
+}
+
+.navbar li:hover {
+	background-color: #333;
+}
+
+
+.grid-container {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-gap: 1vw;
+}
+
+#chartdiv {
+	height: 50vh;
+}
+
+
+
+#usageblurb {
+	font-size: 1.5rem;
+}
+
+
+

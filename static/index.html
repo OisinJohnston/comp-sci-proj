@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+		<script src="./index.js"></script>
+		<link rel="stylesheet" href="styles.css">
+	</head>
+	<body>
+		<div class="navbar">
+			<ul>
+				<li><a href="/">Home</a></li>
+				<li><a href="/calc.html">Calculator</a></li>
+			</ul>
+		</div>
+		<h1>Water Intake Tracker</h1>
+		<div class="grid-container">
+		<div id="usageblurb">
+			<h3>How to use the microbit</h3>
+			<p>
+				The microbit has two buttons labeled A and B.
+				To change the amount of water you wish to log simply press B to increase it by 100ml and A to decrease it by 100ml.
+				<br/>
+				To commit the change simply ensure the microbit is connected to the PC this proccess is running on using the microbit's USB port and press buttons A and B.
+				<br/>
+				Note: due to the nature of the microbit's architechture, data cannot be persisted on the microbit, in the event of the microbit losing power or being reset manually the data for that day will be reset.
+			</p>
+			<h3>Using the intake calculator</h3>
+			<p>Simply click <a href="/calc.html">here</a> and input your information to be updated on if your consuming enough water per day </p>
+		</div>
+		<div id="chartdiv">
+			<canvas id="chart"></canvas>
+		</div>
+		</div>
+	</body>
+
+
+</html>

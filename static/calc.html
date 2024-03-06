@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+		<script src="./index.js"></script>
+		<script src="./calc.js"></script>
+		<link rel="stylesheet" href="styles.css">
+	</head>
+	<body>
+		<div class="navbar">
+			<ul>
+				<li><a href="/">Home</a></li>
+				<li><a href="/calc.html">Calculator</a></li>
+			</ul>
+		</div>
+		<h1>Water Intake Calculator</h1>
+		<div class="grid-container">
+		<div id="usageblurb">
+			Please enter your weight to calculate the amount of water you need to consume:
+			<input type="number" id="weight"></input>
+			<button onclick=calculate()>Submit</button>
+			<br/>
+			Once you submit a black line will appear on the graph indicating the level of water you need to consume on a given day
+		</div>
+		<div id='chartdiv'>
+			<canvas id="chart"></canvas>
+		</div>
+		</div>
+	</body>
+
+
+</html>
