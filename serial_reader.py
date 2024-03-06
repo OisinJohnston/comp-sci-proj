@@ -16,7 +16,7 @@ con = sqlite3.connect("database.db")
 
 cur = con.cursor()
 
-cur.execute("CREATE TABLE IF NOT EXISTS water_intake(timestamp DATE PRIMARY KEY, waterconsumed int, temperature int);""")
+cur.execute("CREATE TABLE IF NOT EXISTS water_intake(timestamp DATE PRIMARY KEY, waterconsumed int, temperature int);")
 
 def find_comport(pid, vid, baud):
 	# A simple function to find the port the microbit is running on if none is found it will return None.
