@@ -45,13 +45,12 @@ def main():
 			ser_micro.open()
 			print("Reconnected Successfully")
 			
-		if inp != "":
-			try:
-				new_val, temp =  (int(round(float(i),0)) for i in inp.strip().split(','))
-				cur.execute("REPLACE INTO water_intake VALUES (?, ?, ?)", [datetime.utcnow().date().isoformat(), new_val, temp])
-				con.commit()
-			except:
-				print(f"Failed to parse and commit string: {inp}")
+        try:
+            new_val, temp =  (int(round(float(i),0)) for i in inp.strip().split(','))
+            cur.execute("REPLACE INTO water_intake VALUES (?, ?, ?)", [datetime.utcnow().date().isoformat(), new_val, temp])
+            con.commit()
+        except:
+            print(f"Failed to parse and commit string: {inp}")
 
 	
 
