@@ -17,18 +17,28 @@
 		<h1>Water Intake Calculator</h1>
 		<div class="grid-container">
 		<div id="usageblurb">
-			Please enter your weight to calculate the amount of water you need to consume:
-			<input type="number" id="weight"></input>
+			Please enter your weight and minutes of activity per week to calculate the amount of water you need to consume:
+			<br/>
+			Weight: <input type="number" id="weight"></input>
+			<br/>
+			Minutes of activity per week: <input type="number" id="activityLevels"></input>
 			<button onclick=calculate()>Submit</button>
 			<br/>
-			Once you submit a black line will appear on the graph indicating the level of water you need to consume on a given day
+			Once you submit a red line will appear on the graph indicating the level of water you need to consume on a given day
+			<br/>
+			Please enter your age and sex to compare your data to the average.
+			<br/>
+			Age: <input type="number" id="age"></input><br/>
+			Sex: 
+			<input type="radio" id="male" name="sex" value="m" checked> Male
+			<input type="radio" id="felame" name="sex" value="f"> Female
+			<br/>
+			<button onclick=compareToAverage()>Submit</button>
+			<br/>
+			Once you submit a blue line will appear on the graph indicating the average level of water for your age and sex that's consumed
 
-			Based on your past data I've made the following predictions.
-			<table id="predictions-table">
-				<tr>
-					
-				</tr>
-			</table>
+
+
 		</div>
 		<div id='chartdiv'>
 			<canvas id="chart"></canvas>
